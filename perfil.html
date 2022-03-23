@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Blog</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/profile.css">
   <link rel="stylesheet" href="css/font/flaticon.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./css/media-queries.css">
@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Lato:wght@400;700&family=Poppins:wght@400;500;600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -38,58 +39,129 @@
   <main>
     
     <section class="profile-main-container">
-      <div class="grid-container profile-container">
+      <!-- <div class="blob-container">
+
+        <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+          <g transform="translate(155.54671478271484, 4.818458557128906)">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(254, 0, 242);"></stop>
+                <stop offset="100%" style="stop-color: rgb(251, 2, 128);"></stop>
+              </linearGradient>
+            </defs>
+            <path fill="url(#gradient)">
+              <animate attributeName="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="M466.5,303.5Q436,357,399.5,401.5Q363,446,306.5,456.5Q250,467,190.5,461.5Q131,456,108.5,400.5Q86,345,54.5,297.5Q23,250,31,189Q39,128,94.5,102Q150,76,200,40Q250,4,309,25Q368,46,410.5,89.5Q453,133,475,191.5Q497,250,466.5,303.5Z;
+                
+                M460,301.5Q429,353,390.5,389.5Q352,426,301,457Q250,488,196.5,462Q143,436,88.5,405.5Q34,375,54,312.5Q74,250,56.5,189Q39,128,83,83Q127,38,188.5,22.5Q250,7,302.5,37Q355,67,397,104Q439,141,465,195.5Q491,250,460,301.5Z;
+                
+                M458.5,304.5Q439,359,396,393.5Q353,428,301.5,459.5Q250,491,204,450.5Q158,410,121.5,377.5Q85,345,64,297.5Q43,250,68,204.5Q93,159,109.5,97Q126,35,188,37Q250,39,296,64.5Q342,90,377,123Q412,156,445,203Q478,250,458.5,304.5Z;
+                
+                M451.22182,303.52958Q435.1183,357.05915,397.45564,398.83733Q359.79297,440.61551,304.89648,443.00279Q250,445.39007,196.23661,440.79576Q142.47322,436.20145,100.15067,398.36411Q57.82813,360.52678,47.01758,305.26339Q36.20703,250,44.22461,192.85491Q52.24219,135.70983,91.54716,89.72182Q130.85212,43.73382,190.42606,49.1303Q250,54.52678,298.42606,67.89648Q346.85212,81.26618,376.51479,120.57394Q406.17746,159.8817,436.7514,204.94085Q467.32534,250,451.22182,303.52958Z;
+                
+                M466.5,303.5Q436,357,399.5,401.5Q363,446,306.5,456.5Q250,467,190.5,461.5Q131,456,108.5,400.5Q86,345,54.5,297.5Q23,250,31,189Q39,128,94.5,102Q150,76,200,40Q250,4,309,25Q368,46,410.5,89.5Q453,133,475,191.5Q497,250,466.5,303.5Z"
+              ></animate>
+            </path>
+          </g>
+        </svg>
+      </div> -->
+      <!-- To add glow effect -->
+      <!-- <div class="blob-container">
+
+        <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+          <g transform="translate(155.54671478271484, 4.818458557128906)">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(254, 0, 242);"></stop>
+                <stop offset="100%" style="stop-color: rgb(251, 2, 128);"></stop>
+              </linearGradient>
+            </defs>
+            <path fill="url(#gradient)">
+              <animate attributeName="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="M466.5,303.5Q436,357,399.5,401.5Q363,446,306.5,456.5Q250,467,190.5,461.5Q131,456,108.5,400.5Q86,345,54.5,297.5Q23,250,31,189Q39,128,94.5,102Q150,76,200,40Q250,4,309,25Q368,46,410.5,89.5Q453,133,475,191.5Q497,250,466.5,303.5Z;
+                
+                M460,301.5Q429,353,390.5,389.5Q352,426,301,457Q250,488,196.5,462Q143,436,88.5,405.5Q34,375,54,312.5Q74,250,56.5,189Q39,128,83,83Q127,38,188.5,22.5Q250,7,302.5,37Q355,67,397,104Q439,141,465,195.5Q491,250,460,301.5Z;
+                
+                M458.5,304.5Q439,359,396,393.5Q353,428,301.5,459.5Q250,491,204,450.5Q158,410,121.5,377.5Q85,345,64,297.5Q43,250,68,204.5Q93,159,109.5,97Q126,35,188,37Q250,39,296,64.5Q342,90,377,123Q412,156,445,203Q478,250,458.5,304.5Z;
+                
+                M451.22182,303.52958Q435.1183,357.05915,397.45564,398.83733Q359.79297,440.61551,304.89648,443.00279Q250,445.39007,196.23661,440.79576Q142.47322,436.20145,100.15067,398.36411Q57.82813,360.52678,47.01758,305.26339Q36.20703,250,44.22461,192.85491Q52.24219,135.70983,91.54716,89.72182Q130.85212,43.73382,190.42606,49.1303Q250,54.52678,298.42606,67.89648Q346.85212,81.26618,376.51479,120.57394Q406.17746,159.8817,436.7514,204.94085Q467.32534,250,451.22182,303.52958Z;
+                
+                M466.5,303.5Q436,357,399.5,401.5Q363,446,306.5,456.5Q250,467,190.5,461.5Q131,456,108.5,400.5Q86,345,54.5,297.5Q23,250,31,189Q39,128,94.5,102Q150,76,200,40Q250,4,309,25Q368,46,410.5,89.5Q453,133,475,191.5Q497,250,466.5,303.5Z"
+              ></animate>
+            </path>
+          </g>
+        </svg>
+      </div> -->
+
+      <div class="portfolio-header">
+        <img src="./assets/img/Sin título-1.jpg" alt="">
         <div>
-          <img src="./assets/img/Sin título-1.jpg" alt="">
-        </div>
-        <div>
-          <h2>Hola, mi nombre es Marco Agüero</h2>
-          <p>Soy un estudiante de ingenieria en informatica y desarrollo web.</p>
+          <div class="box-name">
+            <div class="lightbar"></div>
+            <div class="topLayer"></div>
+            <h1>Marco Agüero</h1>
+          </div>
+          <p>Jr Web Developer</p>
         </div>
       </div>
+      <div class="portfolio-redes">
+        <a href=""> <span><i class='bx bxl-linkedin'></i></span> linkedIn</a>
+        <a href=""> <span><i class='bx bxl-twitter' ></i></span> Twitter</a>
+        <a href=""> <span><i class='bx bxl-github' ></i></span> Github</a>
+        <a href=""> <span><i class='bx bxl-gmail' ></i></span> Gmail</a>
+      </div>
+      <!-- <div class="border-gradient"></div> -->
     </section>
-    <section class="profile-main-projects">
-      <div class="grid-container">
-        <h3>Proyectos</h3>
-        <div class="proyects-main-container">
-          <article class="project-container">
-            <h4>Title</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate necessitatibus, repellat cum architecto voluptatum id similique atque facilis enim, dignissimos placeat error sequi quas quidem. Reprehenderit necessitatibus voluptate cumque at?</p>
-          </article>
-          <article class="project-container">
-            <h4>Title</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate necessitatibus, repellat cum architecto voluptatum id similique atque facilis enim, dignissimos placeat error sequi quas quidem. Reprehenderit necessitatibus voluptate cumque at?</p>
-          </article>
-          <article class="project-container">
-            <h4>Title</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate necessitatibus, repellat cum architecto voluptatum id similique atque facilis enim, dignissimos placeat error sequi quas quidem. Reprehenderit necessitatibus voluptate cumque at?</p>
-          </article>
+    <div class="border-gradient"></div>
+
+    <!-- ########## ABOUT SECTION ########## -->
+    <section class="portfolio-about">
+      <div class="portfolio-about--myself">
+        <img src="./assets/img/person-about.png" alt="">
+        <h2>¿Quien soy?</h2>
+        <p>Soy una persona a quien le encanta mantenerse actualizado sobre tecnología, me apasiona lo que hago y me esfuerzo siempre en dar lo mejor de mi, soy responsable, respetuoso, comprometido y siempre en busca de mejora continua.</p>
+      </div>
+      <div class="portfolio-about--skills">
+        <h2>Lenguajes que domino</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <i class='bx bxl-html5 icon'></i>
+            <p>HTML5</p>
+          </div>
+          <div class="skill">
+            <i class='bx bxl-css3 icon' ></i>
+            <p>CSS3</p>
+          </div>
+          <div class="skill">
+            <i class='bx bxl-javascript icon' ></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <i class='bx bxl-react icon' ></i>
+            <p>ReactJs</p>
+          </div>
+          <div class="skill">
+            <i class='bx bxl-nodejs icon' ></i>
+            <p>NodeJs</p>
+          </div>
+          <div class="skill">
+            <i class='bx bxl-python icon' ></i>
+            <p>Python</p>
+          </div>
+          <div class="skill">
+            <i class='bx bxl-java icon' ></i>
+            <p>Java</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="contact-main-container">
-      <div class="contact-left contact-sect">
-        <div class="container_contact_section">
-          <span class="contact_icon"><i class='bx bx-envelope' ></i></span>
-          <div>
-            <a href="">Contacto</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla itaque nihil necessitatibus numquam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="contact-right contact-sect">
-        <div class="container_contact_section">
-          <span class="contact_icon"><i class='bx bxs-edit-alt' ></i></span>
-          <div>
-            <a href="">Escribeme</a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id ullam quos obcaecati in.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Seccion de contacto -->
+    
   </main>
 
   <footer>

@@ -72,7 +72,7 @@ header .icons span {
   width: 50%;
   height: 50%;
   font-size: 1.5rem;
-  color: #ff4eff;
+  color: #ff69b4;
 }
 
 nav {
@@ -336,44 +336,10 @@ footer {
 }
 
 /* ========== PROFILE ========== */
-
 .profile-main-container {
-  padding: 70px 70px;
-  background-color: #cdd2da;
-  margin-bottom: 50px;
-}
-
-.profile-main-container img {
-  width: 250px;
-  margin: 0 30px;
-  border-radius: 50%;
-}
-
-.profile-main-container .profile-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.profile-main-projects {
-  padding: 0 70px 40px;
-}
-
-.profile-main-projects h3 {
-  border-bottom: 1px solid #cdd2da;
-  color: #cdd2da;
-  padding-bottom: 35px;
-  text-align: center;
-}
-
-.proyects-main-container {
+  width: 90vw;
+  margin: 20px 50px 10px 50px;
+  height: 400px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.project-container {
-  padding: 0 5px;
-  color: #cdd2da;
-}
-.project-container h4 {
-  font-size: 20px;
+  grid-template-columns: 2fr 1fr;
 }
